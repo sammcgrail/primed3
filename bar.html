@@ -1,0 +1,31 @@
+<html>
+  <head>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+
+  <body>
+    <h1>simple d3 examples to show colleagues</h1>
+    <p id="someID"></p>
+    <script>
+      var abc = d3.select("body") //select the body tag
+                      .append("svg") //add an svg tag to body
+                          .attr("width", 100) //specify the svg tag properties
+                          .attr("height", 100)
+                      .append("circle") //add an svg circle
+                          .attr("cx", 50) //specify properties of the circle
+                          .attr("cy", 50)
+                          .attr("r", 40)
+                          .attr("stroke", "black")
+                          .attr("stroke-width", "3")
+                          .attr("fill", "red");
+      var xyz = d3.select("#someID").text("red circle");
+      var efg = d3.select("body")
+                .append("p")
+                    .text("red circle")
+                .append("x")
+                    .text("red circle");
+      </script>
+
+
+  </body>
+</html>
